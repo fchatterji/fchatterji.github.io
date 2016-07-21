@@ -1,7 +1,66 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+   <head>
+      <meta name="description" content="Udacity Project 2 portfolio website" />
+      <meta name="author" content="Florent Chatterji">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+      <meta charset="utf-8">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta id="theme-color" name="theme-color" content="#307699">
+      <!-- If IE use the latest rendering engine -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Portfolio website</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <div class="container">
+         <header class="page-header row">
+            <img class="logo center-block" src="svg/udacity_logo.svg" alt="udacity logo">
+            <div class="header-text text-center text-uppercase">
+               <h1>Florent Chatterji</h1>
+               <p>Front-end ninja</p>
+            </div>
+         </header>
+         <section class="jumbotron row" id="jumbotron">
+            <picture>
+               <!-- three different images are provided depending on the width of the device -->
+               <source srcset="img/code-400x300.jpg" media="(max-width: 350px)">
+               <source srcset="img/code-800x600.jpg" media="(max-width: 750px)">
+               <source srcset="img/code-1600x1200.jpg">
+               <img class=" jumbotron-image" src="img/code-1600x1200.jpg" alt="lines of code on a white background">
+            </picture>
+         </section>
+         <section class="row">
+            <h2 class="featured-work">Featured work</h2>
+         </section>
+         <section class="row">
+            <div class="col-xs-12  col-md-4">
+               <a href="https://github.com/fishesandchip/udacity_project_movie_trailer" class="thumbnail">
+                  <img class="thumbnail-image" src="img/fresh_tomatoes-800x600.jpg" alt="preview of fresh tomatoes website">
+                  <div class="thumbnail-text text-center">
+                     <h4 class="text-uppercase">Fresh tomatoes</h4>
+                  </div>
+               </a>
+            </div>
+            <div class="col-xs-12  col-md-4">
+               <a href="https://github.com/fishesandchip/Lingulo-website-tutorial" class="thumbnail">
+                  <img class="thumbnail-image" src="img/lingulo-800x600.jpg" alt="preview of lingulo website">
+                  <div class="thumbnail-text text-center">
+                     <h4 class="text-uppercase">Lingulo website</h4>
+                  </div>
+               </a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <a href="http://fchatter.pythonanywhere.com/webcosting/" class="thumbnail">
+                  <img class="thumbnail-image" src="img/webcosting-800x600.jpg" alt="preview of webcosting website">
+                  <div class="thumbnail-text text-center">
+                     <h4 class="text-uppercase">Webcosting</h4>
+                  </div>
+               </a>
+            </div>
+         </section>
+      </div>
+   </body>
 </html>
