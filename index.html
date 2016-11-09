@@ -1,66 +1,216 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta name="description" content="Udacity Project 2 portfolio website" />
-      <meta name="author" content="Florent Chatterji">
-      <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-      <meta charset="utf-8">
-      <meta name="mobile-web-app-capable" content="yes">
-      <meta id="theme-color" name="theme-color" content="#307699">
-      <!-- If IE use the latest rendering engine -->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Portfolio website</title>
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/style.css" />
-   </head>
-   <body>
-      <div class="container">
-         <header class="page-header row">
-            <img class="logo center-block" src="svg/udacity_logo.svg" alt="udacity logo">
-            <div class="header-text text-center text-uppercase">
-               <h1>Florent Chatterji</h1>
-               <p>Front-end ninja!</p>
+
+<head>
+
+    <meta name="description" content="Florent Chatterji portfolio website" />
+    <meta name="author" content="Florent Chatterji">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta charset="utf-8">
+    <meta id="theme-color" name="theme-color" content="#307699">
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Portfolio website</title>
+
+    <!--jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/b4a6a79803.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <!-- Jumbotron -->
+    <section class="jumbotron" id="jumbotron">
+        <div class="container">
+            <h1>Hi, i'm Florent.</h1>
+            <a class="home-cta" href="#about">
+            Learn more about what I do<br>
+            <i class="fa fa-chevron-down"></i>
+          </a>
+
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="container-fullwidth">
+
+        <nav class="navbar navbar-default" id="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
             </div>
-         </header>
-         <section class="jumbotron row" id="jumbotron">
-            <picture>
-               <!-- three different images are provided depending on the width of the device -->
-               <source srcset="img/code-400x300.jpg" media="(max-width: 350px)">
-               <source srcset="img/code-800x600.jpg" media="(max-width: 750px)">
-               <source srcset="img/code-1600x1200.jpg">
-               <img class=" jumbotron-image" src="img/code-1600x1200.jpg" alt="lines of code on a white background">
-            </picture>
-         </section>
-         <section class="row">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#jumbotron">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <!-- About section -->
+        <section class="about" id="about">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>My Experience</h2>
+                    <p class="about-summary">
+                        Passionate about innovation and tech, i love me some booleans Previously a spreadsheet geek disguised as a financial consultant/manager for public entites.
+                </div>
+
+                <div class="col-md-6">
+                    <div class="employment">
+                        <i class="fa fa-code-fork"></i>
+                        <h3 class="title">Employment</h3>
+                        <p>Has changed career and is now looking for an awesome internship with chips and fishes</p>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-circle"></i>worked in financial control for Bordeaux Métropole. Audited and negotiated with companies that manage public services (eg: Suez-Lyonnaise des Eaux)</li>
+                            <li><i class="fa-li fa fa-circle"></i>intermediate level manager at the Upper Normandy region. Managed a team of 6 persons with a 6M€ budget dedicated to life-long education</li>
+                            <li><i class="fa-li fa fa-circle"></i> worked as a financial consultant for two Paris based companies: SCET and 2iConseil. Various missions that consist of helping public entities develop and finance public projects (stadiums, swimming-pools...)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="education">
+                        <i class="fa fa-code-fork"></i>
+                        <h3 class="title">Education</h3>
+                        <h4>Udacity</h4>
+                        <p>Full Stack Web Developper nano degree - june-september 2016</p>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-circle"></i>specialized degree in full stack web development</li>
+                            <li><i class="fa-li fa fa-circle"></i>tons of practical experience, 8 projects</li>
+                        </ul>
+                        <h4>Conservatoire National des Arts et Métiers</h4>
+                        <p>Bachelor in Computer Science, specialization in web development, 2015-2017</p>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-circle"></i>university degree</li>
+                            <li><i class="fa-li fa fa-circle"></i>completed in 2 years, despite having a full-time job during the first year</li>
+                        </ul>
+                        <h4>Sciences-Po Lyon</h4>
+                        <p>Masters degree in Public Management and Public-Private Partnerships</p>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-circle"></i>something to say</li>
+                            <li><i class="fa-li fa fa-circle"></i>another thing to say</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio section -->
+        <section class="row" id="portfolio">
             <h2 class="featured-work">Featured work</h2>
-         </section>
-         <section class="row">
-            <div class="col-xs-12  col-md-4">
-               <a href="https://github.com/fishesandchip/udacity_project_movie_trailer" class="thumbnail">
-                  <img class="thumbnail-image" src="img/fresh_tomatoes-800x600.jpg" alt="preview of fresh tomatoes website">
-                  <div class="thumbnail-text text-center">
-                     <h4 class="text-uppercase">Fresh tomatoes</h4>
-                  </div>
-               </a>
+        </section>
+
+        <section class="portfolio row">
+            <div class="col-xs-6 pull-right">
+                <img class="portfolio-image img-responsive" src="img/fresh_tomatoes-800x600.jpg" alt="preview of fresh tomatoes website">
             </div>
-            <div class="col-xs-12  col-md-4">
-               <a href="https://github.com/fishesandchip/Lingulo-website-tutorial" class="thumbnail">
-                  <img class="thumbnail-image" src="img/lingulo-800x600.jpg" alt="preview of lingulo website">
-                  <div class="thumbnail-text text-center">
-                     <h4 class="text-uppercase">Lingulo website</h4>
-                  </div>
-               </a>
+
+            <div class="col-xs-6">
+                <h3 class="portfolio-title">Fresh tomatoes website</h3>
+                <ul class="portfolio-tags">
+                    <li>html generator</li>
+                </ul>
+                <p class="portfolio-description">
+                    It's a website which generates html.
+                </p>
+                <p>
+                    <b>Technology used</b> Python 2.7, Bottle Framework, Google appengine, Jinja2template, Bootstrap and Javascript.
+                </p>
+                <a class="btn btn-default" href="https://github.com/fishesandchip/udacity_project_movie_trailer">Go to code</a>
             </div>
-            <div class="col-xs-12 col-md-4">
-               <a href="http://fchatter.pythonanywhere.com/webcosting/" class="thumbnail">
-                  <img class="thumbnail-image" src="img/webcosting-800x600.jpg" alt="preview of webcosting website">
-                  <div class="thumbnail-text text-center">
-                     <h4 class="text-uppercase">Webcosting</h4>
-                  </div>
-               </a>
+        </section>
+
+        <section class="portfolio row">
+            <div class="col-xs-6">
+                <img class="portfolio-image img-responsive" src="img/lingulo-800x600.jpg" alt="preview of lingulo website">
             </div>
-         </section>
-      </div>
-   </body>
+
+            <div class="col-xs-6">
+                <h3 class="portfolio-title">Lingulo website</h3>
+                <ul class="portfolio-tags">
+                    <li>static website</li>
+                </ul>
+                <p class="portfolio-description">
+                    It's a nice static website
+                </p>
+                <p>
+                    <b>Technology used</b> Python 2.7, Bottle Framework, Google appengine, Jinja2template, Bootstrap and Javascript.
+                </p>
+                <a class="btn btn-default" href="https://github.com/fishesandchip/Lingulo-website-tutorial">Go to code</a>
+            </div>
+        </section>
+
+        <section class="portfolio row">
+            <div class="col-xs-6 pull-right">
+                <img class="portfolio-image img-responsive" src="img/webcosting-800x600.jpg" alt="preview of webcosting website">
+            </div>
+
+            <div class="col-xs-6">
+                <h3 class="portfolio-title">webcosting website</h3>
+                <ul class="portfolio-tags">
+                    <li>fully responsive</li>
+                    <li>interactive</li>
+                </ul>
+                <p class="portfolio-description">
+                    Webcosting is in interactive website that helps the user to estimate the development time of a software project, using two methods: cocomo and function point.
+                    <br>
+                    <br> It uses advanced django features.
+                </p>
+                <p>
+                    <b>Technology used</b> Python 2.7, Django 1.9, and Bootstrap.
+                </p>
+                <a class="btn btn-default" href="http://fchatter.pythonanywhere.com/webcosting/">Go to website</a>
+                <a class="btn btn-default" href="https://github.com/rhinoferoce/webcosting">Go to code</a>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="row" id="contact">
+            <h2 class="contact">Want to have coffee with me?</h2>
+            <h3>Send me a mail at florent.chatterji@gmail.com</h3>
+            <a class="btn btn-default" href="mailto:florent.chatterji@gmail.com">Send me an email</a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <a href="www.linkedin.com/in/florent-c-aba66017" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/rhinoferoce" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="http://stackoverflow.com/users/5555471/florent-chatterji" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
+

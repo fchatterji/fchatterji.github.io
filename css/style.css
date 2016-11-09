@@ -4,8 +4,14 @@
  * 
  *
  */
-.container {
-  max-width: 800px; }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px; } }
+.affix {
+  width: 100%;
+  top: 0;
+  /* the z-index makes the navbar stay in front of the content when the user scrolls down. */
+  z-index: 9999 !important; }
 
 p,
 h1,
@@ -17,35 +23,47 @@ a:link {
 
 /*
  *
- * Header
+ * Navbar
  * 
  *
  */
-.page-header {
-  border-bottom: 4px solid #7d97ad; }
+.navbar {
+  height: 8vh; }
 
-.logo {
-  height: 100px; }
-
-@media (min-width: 500px) {
-  .header-text {
-    text-align: right;
-    float: right; }
-
-  .logo {
-    float: left; } }
 /*
  *
  * Jumbotron
  * 
  *
  */
-#jumbotron {
-  padding: 0; }
-
-.jumbotron-image {
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  height: 92vh;
   width: 100%;
-  max-height: 400px; }
+  margin-bottom: 0;
+  min-height: 350px;
+  background-attachment: scroll;
+  background-position: center center;
+  background-image: url("../img/the-coder-1600x1200.jpg"); }
+
+/* The before selector below has the same size and position as the jumbotron.
+It also has a semi-transparent background color, which is actually in front
+of the background image, and gives it a kind of filter, or layer, and achieves a nice
+effect. 
+*/
+.jumbotron:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
+  background-color: rgba(27, 166, 223, 0.7);
+  pointer-events: none; }
 
 /*
  *
