@@ -8,6 +8,6 @@ stay affixed when the user scrolls past the jumbotron.
 */
 $("#navigation").affix({
     offset: {
-        top: $("#jumbotron").outerHeight(true)
+        top: $(".jumbotron").outerHeight(true)
     }
 });
