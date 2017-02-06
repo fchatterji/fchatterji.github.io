@@ -107,7 +107,10 @@ xtype
 
 .cd-headline.type .cd-words-wrapper {
     vertical-align: top;
-    overflow: hidden;
+    /* Following rule deleted from original source
+    because it caused the ending of words to be hidden
+    */
+    overflow: visible;
 }
 
 .cd-headline.type .cd-words-wrapper::after {

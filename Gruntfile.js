@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                         height: 300,
                         quality: 30
                     }],
-                    
+
                     aspectRatio: false
                 },
 
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'svg/udacity_logo.svg': 'svg_src/udacity_logo.svg'
+                    'svg/*': 'svg_src/*'
                 }
             }
         },

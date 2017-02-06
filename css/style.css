@@ -7,7 +7,7 @@
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 970px;
+        max-width: 1100px;
     }
 }
 
@@ -53,31 +53,13 @@ body {
     display: table;
     overflow: hidden;
     padding: 0;
-    height: 92vh;
+    height: 93vh;
     width: 100%;
     margin-bottom: 0;
     min-height: 350px;
     background-attachment: scroll;
     background-position: center center;
-    background-image: url("../img/the-coder-1600x1200.jpg");
-}
-
-.jumbotron:before {
-    /* The before selector has the same size and position as the jumbotron.
-    It also has a semi-transparent background color, which is actually in front
-    of the background image, and gives it a kind of filter, or layer, and achieves a nice
-    effect. 
-    */
-    content: ' ';
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.7;
-    background-color: rgba(27, 166, 223, 0.7);
-    pointer-events: none;
+    background-image: url("../img/the-coder-blur-1600x1200.jpg");
 }
 
 .jumbotron-content {
@@ -97,15 +79,22 @@ body {
 }
 
 #jumbotron-cta {
-    position: relative;
-    font-size: 1.5em;
-    color: rgba(255, 255, 255, 0.7);
     z-index: 999;
-    transition: all 0.5s ease;
+    transition: all 0.1s ease;
+    position: absolute;
+    width: 200px;
+    margin-left: -100px;
+    left: 50%;
+    bottom: 10%;
 }
 
 #jumbotron-cta:hover {
     color: #EDF1F2;
+}
+
+#portfolio-link {
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -116,9 +105,12 @@ body {
  *
  */
 
+
+/*
 .navbar {
     height: 8vh;
 }
+*/
 
 @media (min-width: 768px) {
     .navbar-nav {
@@ -149,6 +141,10 @@ body {
     z-index: 9999 !important;
 }
 
+.navigation {
+    min-height: 8vh;
+}
+
 
 /*
  *
@@ -157,13 +153,21 @@ body {
  *
  */
 
-.experience {}
+.about {
+    padding-top: 4%;
+    padding-bottom: 6%
+}
 
 .experience-title {
     color: #364347;
     line-height: 1.4;
     font-weight: 700;
     text-align: center;
+    padding-bottom: 1%;
+}
+
+.experience-summary {
+    padding-bottom: 4%;
 }
 
 
@@ -174,7 +178,8 @@ body {
  *
  */
 
-.fa-code-fork {
+.fa-code,
+.fa-graduation-cap {
     color: #1DB0ED;
     font-size: 5rem;
 }
@@ -213,12 +218,40 @@ body {
 
 .portfolio {
     background-color: #f5f5f5;
-    padding-top: 2%;
+    padding-top: 6%;
+    padding-bottom: 6%;
 }
 
-.portfolio .row {
-    padding: 6% 0;
-    border-bottom: 2px solid black;
+.portfolio-title,
+.portfolio-heading {
+    color: #364347;
+    line-height: 1.4;
+    font-weight: 700;
+    padding-bottom: 1%;
+}
+
+.portfolio-title {
+    text-align: left;
+}
+
+.portfolio-section {
+    border-bottom: 1px solid #d6e1e5;
+    padding-bottom: 7%;
+    padding-top: 7%;
+}
+
+.portfolio-section {
+    border-bottom: 1px solid #d6e1e5;
+    padding-bottom: 7%;
+    padding-top: 7%;
+}
+
+.portfolio-last-section {
+    border-bottom: 0;
+}
+
+.portfolio-technologies {
+    padding-bottom: 2%;
 }
 
 
@@ -232,6 +265,25 @@ body {
 .contact {
     background-color: #5e696d;
     color: #fff;
+    padding-top: 12%;
+    padding-bottom: 10%;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-text {
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.contact-title {
+    font-weight: 700;
+}
+
+.email-button {
+    margin: 0 auto;
 }
 
 
@@ -245,4 +297,22 @@ body {
 footer {
     background-color: #364347;
     color: rgba(255, 255, 255, .4);
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+footer h4 {
+    padding-bottom: 3%;
+}
+
+footer a {
+    padding: 0 5%;
+}
+
+.fa-linkedin,
+.fa-github,
+.fa-stack-overflow {
+    font-size: 5rem;
+    color: #93a4aa;
 }
