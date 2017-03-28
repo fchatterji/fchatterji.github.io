@@ -30,7 +30,7 @@ Before deployment, run grunt to minimize css and update responsive images.
 
 ## Authors
 
-* **Florent Chatterji** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Florent Chatterji** 
 
 ## License
 
